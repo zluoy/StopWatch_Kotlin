@@ -3,6 +3,7 @@ package com.eunji.stopwatch
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import kotlin.concurrent.timer
@@ -81,5 +82,7 @@ class MainActivity : AppCompatActivity() {
 
         linearlayout.removeAllViews()
         lap = 1
+
+        Toast.makeText(this,"RESET !", Toast.LENGTH_SHORT).show()
     }
 }
